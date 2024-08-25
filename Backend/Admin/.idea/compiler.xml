@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="loginms" />
+        <module name="ServiceRegistry" />
+        <module name="Admin" />
+        <module name="GatewaySecurity" />
+        <module name="ApiGateway" />
+        <module name="Registration" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="loginms" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Admin" options="-parameters" />
+      <module name="ApiGateway" options="-parameters" />
+      <module name="GatewaySecurity" options="-parameters" />
+      <module name="Registration" options="-parameters" />
+      <module name="ServiceRegistry" options="-parameters" />
+      <module name="loginms" options="-parameters" />
+    </option>
+  </component>
+</project>
